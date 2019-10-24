@@ -38,11 +38,14 @@ def run(songs)
     user_input = gets.strip
     if user_input == "help"
       help
-    elsif user_input == "list"
+    end
+    if user_input == "list"
       list(songs)
-    elsif user_input == "play"
+    end
+    if user_input == "play"
       play(songs)
-    elsif user_input == "exit"
+    end
+    if user_input == "exit"
       break
     end
   end
